@@ -30,14 +30,29 @@ while opcion != 5:
         productos.append(producto)
         print(productos)
         
-        
+# cuando tiene s finalizando es una lista 
+# lista y diccionario
         
     elif opcion==2:
-        print("estoy en la 2")
+        for productoSeleccionado in productos:
+            print(productoSeleccionado["nombre"])
+            
     elif opcion==3:
-        print("estoy en la 3")
+        #1. Encontrar el elemento
+        #2. Selecciono el elemento 
+        #3. Accedo a las propiedades o atributos  
+        productoCambio = int (input("Digita el id del producto que quieres editar: "))
+        for productoBuscado in productos:
+            if productoBuscado ["id"] == productoCambio:
+                print("Encontramos el productos")
+            else:
+                print("El id no existe")
+                
+        # hacer el break / booleano 
     elif opcion==4:
         print("estoy en la 4")
     else:
         print("Opcion no valida")
+        
+#(POP) eliminar 
         
